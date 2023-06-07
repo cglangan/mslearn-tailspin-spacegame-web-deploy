@@ -12,7 +12,7 @@ stages:
     displayName: 'Build job'
     pool:
       #vmImage: 'ubuntu-20.04'
-      name: 'Default'
+      name: 'TestPipeline'
       demands:
       - npm
 
@@ -73,7 +73,7 @@ stages:
   - deployment: Deploy
     pool:
       #vmImage: 'ubuntu-20.04'
-      name: 'Default'
+      name: 'TestPipeline'
     environment: dev
     variables:
     - group: Release
