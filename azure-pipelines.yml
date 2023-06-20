@@ -1,6 +1,6 @@
 trigger:
 - '*'
-
+#push me 
 variables:
   buildConfiguration: 'Release'
   releaseBranchName: 'release'
